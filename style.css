@@ -1,0 +1,35 @@
+.text-container {
+    background-color: aquamarine;
+}
+
+.text-header {
+    font-size: 45px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+}
+
+.text-paragraph {
+
+    line-height: 1.5em;
+    text-align: justify;
+    text-indent: 1em;
+    font-size: 30px;
+    font-weight: 400;
+    font-family: 'Raleway', sans-serif;
+
+}
+
+.button {
+    text-transform: uppercase;
+}
+
+.link {
+    font-size: 30px;
+ 
+  /*  text-decoration-line:overline underline;
+    text-decoration-style: double;
+    text-decoration-color: lightcoral;
+    */
+    text-decoration: overline underline dashed coral;
+}
+
