@@ -1,3 +1,12 @@
+.header1 {
+    font-size: 40px;
+    background-color: lightpink;
+    text-align: center;
+    letter-spacing: 0.5em;
+    word-spacing: 0.7em;
+}
+
+
 .text-container {
     background-color: aquamarine;
 }
@@ -6,6 +15,7 @@
     font-size: 45px;
     font-family: 'Raleway', sans-serif;
     font-weight: 600;
+    text-shadow: 0 1px 3px red;
 }
 
 .text-paragraph {
