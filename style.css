@@ -1,40 +1,9 @@
-.main-article {
-    font-size: 60px;
-    color: dodgerblue;
-    /* border: 2px solid rgb(77, 21, 77); */
-
-    border-width: 5px;
-    border-style: dotted;
-    border-color: lightcoral;
-
-
+.img {
+    width:200px;
+    border: 4px solid black;
+    padding: 10px;
+    box-sizing: border-box;
 
 }
 
-.main-header {
-    border: inherit;
-    color: initial;
-    border-right: none;
-    border-left: none;
-}
 
-
-.article-content {
-    font-size: 40px;
-}
-
-
-/* Tag selector - 0001
-Class - 0010
-Id - 0100
-Inline - 1000
-*/
-
-.link {
-    text-decoration: none;
-    color: inherit;
-}
-
-/* initial - возврат к начальному состоянию
-inherit - наследование от родителя
-*/
