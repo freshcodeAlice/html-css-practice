@@ -1,50 +1,40 @@
-.header1 {
+.main-article {
+    font-size: 60px;
+    color: dodgerblue;
+    /* border: 2px solid rgb(77, 21, 77); */
+
+    border-width: 5px;
+    border-style: dotted;
+    border-color: lightcoral;
+
+
+
+}
+
+.main-header {
+    border: inherit;
+    color: initial;
+    border-right: none;
+    border-left: none;
+}
+
+
+.article-content {
     font-size: 40px;
-    background-color: lightpink;
-    text-align: center;
-    letter-spacing: 0.5em;
-    word-spacing: 0.7em;
-}
-
-.breakline {
-    background-color: salmon;
-    height: 5px;
 }
 
 
-.text-container {
-    background-color: aquamarine;
-}
-
-.text-header {
-    font-size: 45px;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 600;
-    text-shadow: 0 1px 3px red;
-}
-
-.text-paragraph {
-
-    line-height: 1.5em;
-    text-align: justify;
-    text-indent: 1em;
-    font-size: 30px;
-    font-weight: 400;
-    font-family: 'Raleway', sans-serif;
-
-}
-
-.button {
-    text-transform: uppercase;
-}
+/* Tag selector - 0001
+Class - 0010
+Id - 0100
+Inline - 1000
+*/
 
 .link {
-    font-size: 30px;
- 
-  /*  text-decoration-line:overline underline;
-    text-decoration-style: double;
-    text-decoration-color: lightcoral;
-    */
-    text-decoration: overline underline dashed coral;
+    text-decoration: none;
+    color: inherit;
 }
 
+/* initial - возврат к начальному состоянию
+inherit - наследование от родителя
+*/
