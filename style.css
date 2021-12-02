@@ -1,17 +1,18 @@
-div {
-  border: 2px solid red;
-  width: 300px;
-  display: inline-block;
+* {
+ 
+}
+
+body {
+  background-color: blueviolet;
 }
 
 
-.box1 {
-  margin: 20px;
+.container {
+  width: 200px;
+  border: 2px solid blue;
 }
 
-.box2 {
-  margin: 40px;
+.aquamarine {
+  background-color: aquamarine;
 }
 
-/* margin не суммируется, выбирается больший, а меньший не работает */
-/* для inline-block - суммируются */
