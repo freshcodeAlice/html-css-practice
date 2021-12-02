@@ -1,15 +1,16 @@
-.button {
-  background-color: darkcyan;
-  outline: none;
-  border:none;
-  border-radius: 3px;
-
-  width: 100%;
-  min-width: 60px;
-  max-width: 130px;
-  max-height: 50px;
-
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+* {
+  margin: 0;
 }
+
+
+
+.container {
+  width:100vw;
+  height:100vh;
+  border: 2px solid red;
+  background-color: blue;
+  min-height: 200px;
+  box-sizing: border-box;
+}
+
+/* vh, vw */
