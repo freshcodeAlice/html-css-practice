@@ -1,14 +1,15 @@
-.wrapper {
-  width: 200px;
-  height: 200px;
-  background-color: cadetblue;
-  overflow: auto;
+.button {
+  background-color: darkcyan;
+  outline: none;
+  border:none;
+  border-radius: 3px;
 
-}
+  width: 100%;
+  min-width: 60px;
+  max-width: 130px;
+  max-height: 50px;
 
-
-.inner {
-
-background-color: coral;
-
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
