@@ -1,16 +1,26 @@
 * {
   margin: 0;
 }
-
-
-
-.container {
+/* .container {
   width:100vw;
   height:100vh;
-  border: 2px solid red;
   background-color: blue;
-  min-height: 200px;
-  box-sizing: border-box;
+
+} */
+
+.wrapper{
+  width: 100vw;
+  height: 1000vh;
+  background-image: url('./src/img/1618502434_11-funart_pro-p-oboi-fon-zvezdnoe-nebo-fon-11.jpg');
+  background-attachment: fixed;
+}
+
+.container {
+  width:33vw;
+  height: 500vh;
+  margin: 0 auto;
+  background-color: darkorange;
+  padding: 30px;
 }
 
 /* vh, vw */
