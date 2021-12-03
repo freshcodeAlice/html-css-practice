@@ -1,23 +1,22 @@
-body {
-  background-color: lightgoldenrodyellow;
-}
-
-
-.img {
+div {
   width: 200px;
   height: 200px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 5px solid pink;
-
+  background-color: blueviolet;
+  border: 4px solid red;
+  color: white;
+  text-align: center;
+  font-size: 60px;
+  display: inline-block;
 }
 
-.avatar {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  background-image: url('./src/img/unnamed.jpg');
-  background-size: cover;
-  background-color: lightpink;
-  border: 5px solid pink;
+.box1{
+display: none;
+}
+
+.box2{
+visibility: hidden;
+}
+
+.box3{
+opacity: 0;
 }
