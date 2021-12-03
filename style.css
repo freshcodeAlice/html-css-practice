@@ -1,3 +1,63 @@
-td {
-  border: 2px solid black
+.userlist-container {
+  background-color: #f0f8ff;
+  width: 70vw;
+  height: 60vh;
+}
+
+/* blue #17a2b8; green #28a745; */
+
+.user-card-wrapper {
+width: 20vw;
+background-color: #17a2b8;
+text-align: center;
+padding: 100px 0px 30px;
+margin: 0 auto;
+border: 1px solid #17a2b8;
+}
+
+.user-card-content {
+  background-color: white;
+}
+
+
+.user-card-photo {
+
+  --photo-size: 170px;
+
+
+  width: var(--photo-size);
+  height: var(--photo-size);
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+
+  margin-top: calc(var(--photo-size) / 2 * -1);
+}
+
+.buttons {
+
+  --border: 1px solid grey;
+
+  border-top: var(--border);
+  border-bottom: var(--border);
+  padding: 10px 0;
+}
+
+button {
+  width: 80px;
+  height: 20px;
+  border: none;
+  outline: none;
+  font-size: 11px;
+  text-transform: capitalize;
+  white-space: nowrap;
+}
+
+.green {
+  background-color: #28a745;
+}
+
+p {
+  font-size: 13px;
+  padding: 10px;
 }
