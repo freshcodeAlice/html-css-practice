@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
-    <!-- <link rel="stylesheet" href="./reset.css"> -->
+     <link rel="stylesheet" href="./reset.css"> 
 
     <link rel="stylesheet" href="./style.css">
 
@@ -12,27 +12,58 @@
 </head>
 <body>
 
-    <h1>Header</h1>
 
-    <ul>
-        <li>Item 1</li>
-        <li>Item 2</li>
-        <li>Item 3</li>
-        <li>Item 4</li>
-        <li>Item 5</li>
-        <li>Item 6</li>
-    </ul>
+    <table>
+        <caption>Tarif plan for cat cafe</caption>
 
+        <thead>
+            <tr>
+                <td>Cat name</td>
+                <td>Favorite dish</td>
+                <td>Work hour</td>
+                <td >Tip</td>
+                <td>Vacation</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Donut</td>
+                <td>Fish</td>
+                <td>9-15</td>
+                <td rowspan="4">Chips</td>
+                <td>Sunday, Monday</td>
+            </tr>
+            <tr>
+                <td>Barsik</td>
+                <td>Whiskas</td>
+                <td>23-04</td>
+                <!-- <td>Milk</td> -->
+                <td>None</td>
+            </tr>
+            <tr>
+                <td>Barsik</td>
+                <td>Whiskas</td>
+                <td>23-04</td>
+                <!-- <td>Milk</td> -->
+                <td>None</td>
+            </tr>
+            <tr>
+                <td>Vasiliy</td>
+                <td>Meat</td>
+                <td>Freelance</td>
+                <!-- <td>Pine</td> -->
+                <td>Friday, Sunday</td>
+            </tr>
 
-    <ol>
-        <li>Item 1</li>
-        <li>Item 2</li>
-        <li>Item 3</li>
-        <li>Item 4</li>
-        <li>Item 5</li>
-        <li>Item 6</li>
-    </ol>
+        </tbody>
+        <tfoot>
+                <tr>
+                    <td>Total</td>
+                    <td colspan="4">3 employee</td>
+                </tr>
+        </tfoot>
 
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo necessitatibus consequatur impedit nesciunt et tempore at nam maxime possimus atque!</p>
+    </table>
+   
 </body>
 </html>
