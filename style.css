@@ -1,26 +1,23 @@
-* {
-  margin: 0;
-}
-/* .container {
-  width:100vw;
-  height:100vh;
-  background-color: blue;
-
-} */
-
-.wrapper{
-  width: 100vw;
-  height: 1000vh;
-  background-image: url('./src/img/1618502434_11-funart_pro-p-oboi-fon-zvezdnoe-nebo-fon-11.jpg');
-  background-attachment: fixed;
+body {
+  background-color: lightgoldenrodyellow;
 }
 
-.container {
-  width:33vw;
-  height: 500vh;
-  margin: 0 auto;
-  background-color: darkorange;
-  padding: 30px;
+
+.img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid pink;
+
 }
 
-/* vh, vw */
+.avatar {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-image: url('./src/img/unnamed.jpg');
+  background-size: cover;
+  background-color: lightpink;
+  border: 5px solid pink;
+}
