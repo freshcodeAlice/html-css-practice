@@ -14,16 +14,10 @@
  padding: 10px;
 }
 
- /* .page-link:hover:not(button) {
- background-color: brown;
- color: white;
-} */
-
-.page-link:focus {
-  border: 4px solid green;
+.page-link:link {
+  color:white
 }
 
-div:active {
-  color: pink;
-  background-color: cornflowerblue;
+.page-link:visited {
+  color: green
 }
