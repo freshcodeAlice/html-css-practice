@@ -1,11 +1,28 @@
-ul li {
-  color:blue;
+div {
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  display: inline-block;
 }
 
-ul:first-child li:first-child {
-  color: green;
+/* 1 - красный
+2 - зеленый
+3 - синий
+4 - зеленый
+5 - красный
+6 - синий
+7 - красный
+8 - зеленый */
+
+
+div:nth-child(2n) {
+  background-color: green;
 }
 
-:last-child {
-  color: red
+div:nth-child(2n+1) {
+  background-color: red;
+}
+
+div:nth-child(3n) {
+  background-color: blue;
 }
