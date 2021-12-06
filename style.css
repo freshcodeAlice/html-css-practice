@@ -1,3 +1,26 @@
-article ~ p {
-   color: green
- }
+.container {
+border: 2px solid blue;
+background-color: aquamarine;
+width: 260px;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  background-color: black;
+  border-radius: 50%;
+  display: inline-block;
+}
+/*.icon ~ .icon - все сиблинги ниже по иерархии*/
+/*.icon + .icon - непосредственные сиблинги */
+
+
+
+.icon + .icon {
+  margin-left: 10px;
+}
+
+
+p + p {
+  color: blue
+}
