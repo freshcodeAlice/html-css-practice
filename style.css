@@ -22,3 +22,8 @@
 .page-link:focus {
   border: 4px solid green;
 }
+
+div:active {
+  color: pink;
+  background-color: cornflowerblue;
+}
