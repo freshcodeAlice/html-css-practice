@@ -1,26 +1,23 @@
-.container {
-border: 2px solid blue;
-background-color: aquamarine;
-width: 260px;
+.navigation {
+
 }
 
-.icon {
-  width: 40px;
-  height: 40px;
-  background-color: black;
-  border-radius: 50%;
-  display: inline-block;
-}
-/*.icon ~ .icon - все сиблинги ниже по иерархии*/
-/*.icon + .icon - непосредственные сиблинги */
+.link-list {
 
-
-
-.icon + .icon {
-  margin-left: 10px;
 }
 
+.link-list li {
+  margin-top: 20px;
+}
 
-p + p {
-  color: blue
+.page-link {
+ display: inline-block;
+ text-decoration: none;
+ background-color: lightblue;
+ padding: 10px;
+}
+
+.page-link:hover {
+ background-color: brown;
+ color: white;
 }
