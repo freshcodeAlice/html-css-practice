@@ -1,23 +1,11 @@
-.link-list {
-
+ul li {
+  color:blue;
 }
 
-.link-list li {
-  margin-top: 20px;
+ul:first-child li:first-child {
+  color: green;
 }
 
-.page-link {
- display: inline-block;
- text-decoration: none;
-  
- background-color: lightblue;
- padding: 10px;
-}
-
-.page-link:link {
-  color:white
-}
-
-.page-link:visited {
-  color: green
+:last-child {
+  color: red
 }
