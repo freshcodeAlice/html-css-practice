@@ -23,8 +23,8 @@ margin: 0 auto;
 }
 
 .inner {
-width: 80px;
-height: 80px;
+/* width: 80px;
+height: 80px; */
 background-color: forestgreen;
 border: 1px solid black;
 text-align: center;
@@ -34,13 +34,12 @@ text-align: center;
 
 .absolute {
   position: absolute;
- top: 20px;
- background-color: pink;
- z-index:0;
-}
 
-.relative {
-  position: relative;
-  z-index: 2;
+ background-color: pink;
+ z-index:2;
+top: 0;
+bottom: 0;
+ left: 0;
+ right: 0;
 }
 
