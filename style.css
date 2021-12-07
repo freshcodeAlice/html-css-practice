@@ -30,10 +30,11 @@ border: 1px solid black;
 text-align: center;
 }
 
-/* Relative - относительный */
+/* Fixed - фиксированный, позицируется относительно вьюпорта */
 
-.relative {
-  position: relative;
-  bottom: 10px;
-left: 30px
+
+.fixed {
+  position: fixed;
+ bottom: 0;
+
 }
