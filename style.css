@@ -1,4 +1,4 @@
-/* * {
+ * {
   box-sizing: border-box;
   }
   
@@ -30,52 +30,17 @@ border: 1px solid black;
 text-align: center;
 }
 
-/* Fixed - фиксированный, позицируется относительно вьюпорта */
-/* 
-.fixed {
-  position: fixed;
- bottom: 0;
+/* absolute - позиционирует относительно ближайшего не-статичного родителя, если такого нет - то от корневого элемента */
 
-} */
-
-
-
-.box {
-  width: 80px;
-  height: 80px;
+.absolute {
+  position: absolute;
+ top: 20px;
+ background-color: pink;
+ z-index:0;
 }
 
-.fixed {
-  position: fixed;
-}
-
-.left {
-  left: 0;
-}
-
-.right {
-  right: 0;
-}
-
-.bottom {
-  bottom: 0;
-}
-
-.top {
-  top: 0;
-}
-
-
-div:first-child {
-  background-color: pink;
-}
-div:nth-child(2) {
-  background-color: blue;
-}
-div:nth-child(3) {
-  background-color: violet;
-}
-div:last-child {
-  background-color: rgb(255, 192, 231);
+.relative {
+  position: relative;
+  z-index: 2;
 }
 
