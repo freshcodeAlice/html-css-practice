@@ -1,4 +1,4 @@
-* {
+/* * {
   box-sizing: border-box;
   }
   
@@ -31,10 +31,51 @@ text-align: center;
 }
 
 /* Fixed - фиксированный, позицируется относительно вьюпорта */
-
-
+/* 
 .fixed {
   position: fixed;
  bottom: 0;
 
+} */
+
+
+
+.box {
+  width: 80px;
+  height: 80px;
 }
+
+.fixed {
+  position: fixed;
+}
+
+.left {
+  left: 0;
+}
+
+.right {
+  right: 0;
+}
+
+.bottom {
+  bottom: 0;
+}
+
+.top {
+  top: 0;
+}
+
+
+div:first-child {
+  background-color: pink;
+}
+div:nth-child(2) {
+  background-color: blue;
+}
+div:nth-child(3) {
+  background-color: violet;
+}
+div:last-child {
+  background-color: rgb(255, 192, 231);
+}
+
