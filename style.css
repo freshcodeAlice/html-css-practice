@@ -1,45 +1,52 @@
- * {
+.nav-list {
+  font-size: 0;
+  white-space:nowrap;
+  font-family: sans-serif;
+}
+
+.list-item {
+  display: inline-block;
+  list-style-type: none;
+  font-size: 16px;
+  color: white;
+  position: relative;
+  background-color: #e64a19;
+}
+
+
+
+.link {
+  color: inherit;
+  text-decoration: none;
+
+  padding: 10px;
+  display: inline-block;
+  width: 100%;
   box-sizing: border-box;
-  }
-  
-body {
-  margin: 0;
-  height: 300vh;
-  }
-  
-
-.container {
-background-color: limegreen;
-height: 800px;
-width: 80%;
-margin: 0 auto;
 }
 
-.wrapper {
-width: 80%;
-height: 800px;
-background-color: dodgerblue;
-margin: 0 auto;
-}
 
-.inner {
-/* width: 80px;
-height: 80px; */
-background-color: forestgreen;
-border: 1px solid black;
-text-align: center;
-}
-
-/* absolute - позиционирует относительно ближайшего не-статичного родителя, если такого нет - то от корневого элемента */
-
-.absolute {
+.sub-nav-list {
   position: absolute;
-
- background-color: pink;
- z-index:2;
-top: 0;
-bottom: 0;
- left: 0;
- right: 0;
+  left: 0;
+  right: 0;
+  display: none;
+  padding: 0;
 }
 
+
+.sub-list-item {
+  display: block;
+}
+
+/* .sub-list-item .link {
+  padding: 10px 0;
+} */
+
+.list-item:hover > .sub-nav-list {
+  display: block;
+}
+
+.list-item:hover {
+  background-color: #8a2d0f;
+}
