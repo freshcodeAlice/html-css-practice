@@ -5,11 +5,52 @@ body {
 
 p {
   color: dodgerblue;
+  border: 1px solid black;
 }
 
-p::selection {
-  color: rgb(231, 0, 0);
-font-family: fantasy;
-background-color: rgb(250, 212, 0);
-/* cursor:copy; */
+p::before{
+  color: red;
+  width: 80px;
+  height: 80px;
+  background-color: green;
+  content: '>>>';
+ 
+}
+
+p::after{
+  content: url('./src/icons/arrow-right-bold.svg');
+}
+
+li {
+  list-style-type: none;
+  background-color: teal;
+  color: white;
+  margin-bottom: 20px;
+  width:30%;
+  position: relative;
+}
+
+/* li::before {
+  content: url('./src/icons/arrow-down-bold-circle.svg')
+} */
+
+
+li::before, li::after {
+  font-size: 2em;
+  color: pink;
+  position: absolute;
+
+}
+
+
+li::before {
+  content: open-quote;
+  top: -0.5em;
+  right: 100%;
+}
+
+li::after {
+  content: close-quote;
+  bottom: -1em;
+  left: 100%;
 }
