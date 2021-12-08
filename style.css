@@ -11,8 +11,8 @@ body {
   background-color: white;
   border: 1px solid red;
   box-shadow: -9px 11px 20px -10px rgba(71, 88, 101, 0.2);
- padding: 10px;
- padding-bottom: 20px;
+ padding: 20px 10px;
+
 
 }
 
@@ -37,17 +37,30 @@ transition-duration: 500ms;
 position: relative;
 }
 
-.list-item::after {
-  width: 10px;
+.list-item::after, .list-item::before {
+  width: 0px;
   height: 0.5em;
   background-color: black;
   content: ' ';
   display: block;
   position: absolute;
-  top: 115%;
-  left: 0;
+  
   transition: width ease-in-out 0.5s;
 }
+
+
+.list-item::after {
+  top: 115%;
+  left: 0;
+}
+
+
+.list-item::before {
+  bottom: 115%;
+  left: 0;
+  width: 100%;
+}
+
 
 
 .list-item:hover {
@@ -57,6 +70,10 @@ position: relative;
 
 .list-item:hover::after {
   width: 100%;
+}
+
+.list-item:hover::before {
+  width: 0px;
 }
 
 
