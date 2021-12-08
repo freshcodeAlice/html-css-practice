@@ -2,55 +2,24 @@ body {
   font-family: sans-serif;
 }
 
+section {
+  width: 100%;
+  margin-top: 50px;
+}
 
-p {
-  color: dodgerblue;
+article {
+  display: inline-block;
   border: 1px solid black;
+  color: rgb(4, 46, 88);
+  width: 30%;
 }
 
-p::before{
-  color: red;
-  width: 80px;
-  height: 80px;
-  background-color: green;
-  content: '>>>';
- 
-}
-
-p::after{
+article::before {
   content: url('./src/icons/arrow-right-bold.svg');
+  vertical-align: middle;
 }
 
-li {
-  list-style-type: none;
-  background-color: teal;
-  color: white;
-  margin-bottom: 20px;
-  width:30%;
-  position: relative;
-}
-
-/* li::before {
-  content: url('./src/icons/arrow-down-bold-circle.svg')
-} */
-
-
-li::before, li::after {
-  font-size: 2em;
-  color: pink;
-  position: absolute;
-
-}
-
-
-li::before {
-  content: open-quote;
-  top: -0.5em;
-  right: 100%;
-}
-
-li::after {
-  content: close-quote;
-  bottom: -1em;
-  left: 100%;
+article::after {
+  content: url('./src/icons/arrow-left-bold.svg');
+  vertical-align: middle;
 }
