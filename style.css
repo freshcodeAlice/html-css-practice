@@ -7,8 +7,9 @@ p {
   color: dodgerblue;
 }
 
-p::first-letter {
-  color: rgb(190, 106, 120);
-font-size: 2em;
+p::first-line {
+  color: rgb(1, 0, 66);
 font-family: fantasy;
+background-color: violet;
+
 }
