@@ -7,9 +7,9 @@ p {
   color: dodgerblue;
 }
 
-p::first-line {
-  color: rgb(1, 0, 66);
+p::selection {
+  color: rgb(231, 0, 0);
 font-family: fantasy;
-background-color: violet;
-
+background-color: rgb(250, 212, 0);
+/* cursor:copy; */
 }
