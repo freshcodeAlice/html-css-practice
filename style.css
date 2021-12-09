@@ -1,140 +1,30 @@
-body {
-  height: 300vh;
+.tail-section {
+  color: blue;
+  font-size: 35px;
+  position: relative;
+  padding: 20px;
+  z-index: 5;
+  width: 60vw;
+  height: 50vh;
+  margin: 0 auto;
 }
 
-.header {
-  position: fixed;
-  z-index: 2;
-  top: 0;
-  left: 0;
-  right: 0;
-  background-color: white;
-  border: 1px solid red;
-  box-shadow: -9px 11px 20px -10px rgba(71, 88, 101, 0.2);
- padding: 20px 10px;
-
-
+p::first-letter {
+  font-family: 'Luxurious Script', cursive;
+  font-size: 3em; 
 }
 
-.nav-list {
-font-size: 0;
-margin: 0 auto;
-width: max-content;
-}
-
-
-
-.list-item{
-display: inline-block;
-border: 1px solid black;
-font-size: initial;
-background-color: pink;
-color: violet;
-/* transition: */
-transition-property: all;
-transition-delay: 0.1s;
-transition-duration: 500ms;
-position: relative;
-}
-
-.list-item::after, .list-item::before {
-  width: 0px;
-  height: 0.5em;
-  background-color: black;
-  content: ' ';
-  display: block;
-  position: absolute;
-  
-  transition: width ease-in-out 0.5s;
-}
-
-
-.list-item::after {
-  top: 115%;
-  left: 0;
-}
-
-
-.list-item::before {
-  bottom: 115%;
-  left: 0;
-  width: 100%;
-}
-
-
-
-.list-item:hover {
+p::first-line {
   background-color: violet;
-  color: pink;
 }
 
-.list-item:hover::after {
-  width: 100%;
+.tail-section::before {
+  display: block;
+content: url('./src/img/border-up.jpg');
 }
 
-.list-item:hover::before {
-  width: 0px;
+.tail-section::after {
+  display: block;
+  content: url('./src/img/border-down.jpg');
 }
 
-
-.list-item + .list-item {
-  margin-left: 1.2em;
-}
-
-
-.link {
-  display: inline-block;
-  padding: 10px 20px;
-  color: inherit;
-  text-decoration: none;
-}
-
-
-
-
-main {
-  margin-top: 80px;
-}
-
-.heading {
-  font-size: 2em;
-  text-shadow: 8px 9px 6px rgba(150, 150, 150, 1);
-}
-
-/* 
-.box {
-  height: 60px;
-  width: 5%;
-  color: white;
-  background-color: black;
-  text-align: center;
-  transition: width linear 1s;
-} */
-
-/* section:hover .box {
-  width: 100%;
-
-} */
-
-
-/* cubic-bezier(.29, 1.01, 1, -0.68); */
-/* 
-.linear {
-transition-timing-function: linear;
-}
-
-.ease {
-transition-timing-function: ease;
-}
-
-.ease-in {
-transition-timing-function: ease-in;
-}
-
-.ease-in-out {
-transition-timing-function: ease-in-out;
-}
-
-.cubic-bezier {
-transition-timing-function: cubic-bezier(.29, 1.01, 1, -0.68);
-} */
