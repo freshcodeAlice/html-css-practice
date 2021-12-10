@@ -2,38 +2,84 @@
   box-sizing: border-box;
 }
 
-.container {
-border: 2px solid black;
- /* min-height: 50vh; */
-/*max-height: 90vh; */
-}
 
-
-.item {
-background-color: teal;
-border: 2px solid red;
-color: white;
-font-size: 2em;
-/* padding: 10px 20px; */
-text-align: center;
-
-}
-
-
-.flexContainer {
+.card-list {
+width: 100vw;
+height: 70vh;
+background-color: #5bb5f8;
 display: flex;
-flex-direction: row;
-flex-wrap: nowrap;
+justify-content: center;
+align-items: center;
+color: #36474f;
+}
+
+.card-wrapper {
+  background-color: #ffd543;
+  /* min-width: 30vw; */
+padding: 30px;
+  min-height: 40vh;
+display: flex;
+justify-content: center;
+flex-direction: column;
+box-shadow: 0px 15px 9px -2px rgba(0, 0, 0, 0.2);
+}
+
+.user-image-container {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  padding: 10px;
+  box-shadow: 0px 15px 9px -2px rgba(0, 0, 0, 0.2);
+
+  margin-bottom: 20px;
 
 }
 
 
+.icon-links {
+display: flex;
+justify-content: center;
+margin-bottom: 20px;
+}
 
-.flexItem {
-flex-basis: 100px;
-flex-grow: 0;
-flex-shrink: 0;
+.icon-links img {
+  margin: 2px;
+  width: 13%;
+}
 
-flex: 1;
-/* Резиновые контейнеры */
+.row {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+
+
+}
+
+.column {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 60px;
+  margin: 0 3px;
+}
+
+.column * {
+  text-align: center;
+  padding: 3px;
+/* 
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; */
+}
+
+.big-text {
+ font-weight: 800;
+}
+
+.small-text {
+font-size: 0.75em;
 }
