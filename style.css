@@ -2,12 +2,10 @@
   box-sizing: border-box;
 }
 
-
-
 .container {
 border: 2px solid black;
-min-height: 50vh;
-max-height: 90vh;
+ /* min-height: 50vh; */
+/*max-height: 90vh; */
 }
 
 
@@ -16,16 +14,26 @@ background-color: teal;
 border: 2px solid red;
 color: white;
 font-size: 2em;
-padding: 10px 20px;
+/* padding: 10px 20px; */
 text-align: center;
 
 }
 
+
 .flexContainer {
 display: flex;
-/* flex-direction: row;
-flex-wrap: wrap; */
+flex-direction: row;
+flex-wrap: nowrap;
 
-flex-flow: row wrap;
-justify-content: space-around;
+}
+
+
+
+.flexItem {
+flex-basis: 100px;
+flex-grow: 0;
+flex-shrink: 0;
+
+flex: 1;
+/* Резиновые контейнеры */
 }
