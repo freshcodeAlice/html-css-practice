@@ -1,85 +1,56 @@
-* {
-  box-sizing: border-box;
-}
-
-
 .card-list {
-width: 100vw;
-height: 70vh;
-background-color: #5bb5f8;
+background-color: rgb(250, 250, 250);
 display: flex;
-justify-content: center;
-align-items: center;
-color: #36474f;
+flex-wrap: wrap;
 }
 
 .card-wrapper {
-  background-color: #ffd543;
-  /* min-width: 30vw; */
-padding: 30px;
-  min-height: 40vh;
-display: flex;
-justify-content: center;
-flex-direction: column;
-box-shadow: 0px 15px 9px -2px rgba(0, 0, 0, 0.2);
+width: 300px;
+background: rgb(138,196,242);
+background: linear-gradient(90deg, rgba(138,196,242,1) 0%, rgba(18,124,186,1) 100%);
+font-family: 'Ubuntu', sans-serif;;
+color: white;
+position: relative;
+padding: 25px;
+border-radius: 7px;
+margin: 10px;
+overflow: hidden;
 }
 
-.user-image-container {
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
+.card-wrapper::before, .card-wrapper::after {
+width: 200px;
+height: 200px;
+background-color: white;
+border-radius: 50%;
+opacity: 0.25;
+content: ' ';
+position: absolute;
+
+}
+
+.card-wrapper::before {
+  top: -3em;
+  right: -4.5em;
+}
+
+.card-wrapper::after {
+  bottom: -5em;
+  right: -1em;
+}
+
+
+
+
+.first-row {
   display: flex;
-  justify-content: center;
-  align-self: center;
-  padding: 10px;
-  box-shadow: 0px 15px 9px -2px rgba(0, 0, 0, 0.2);
-
-  margin-bottom: 20px;
-
 }
 
-
-.icon-links {
-display: flex;
-justify-content: center;
-margin-bottom: 20px;
+.icon {
+  margin-left: auto;
 }
 
-.icon-links img {
-  margin: 2px;
-  width: 13%;
-}
-
-.row {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
-
-
-}
-
-.column {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: center;
-  flex-basis: 60px;
-  margin: 0 3px;
-}
-
-.column * {
-  text-align: center;
-  padding: 3px;
-/* 
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis; */
-}
-
-.big-text {
- font-weight: 800;
-}
-
-.small-text {
-font-size: 0.75em;
+.big-number {
+    font-weight: 700;
+    font-size: 1.8em;
+    margin: 5px 0 40px 0;
 }
