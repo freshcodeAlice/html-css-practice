@@ -13,60 +13,117 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-   
-<section class="card-list">
-    <div class="card-wrapper">
-        <div class="first-row"><p>Weekly Orders</p> <img src="./src/icons/bookmark-outline.svg" class="icon"/></div>
-        <p class="big-number">45,6334</p>
-        <p>Decreased by 10%</p>
-    </div>
+     <form>
+         <fieldset>
+             <legend>Personal info</legend>
+            <label> Your firstname 
+                <input 
+                 type="text"
+                 placeholder="Jonh" 
+                autofocus
+                autocomplete="name"/>
+             </label>
+             <label> Your lastname 
+                <input 
+                 type="text"
+                 placeholder="Snow" 
+                autofocus/>
+             </label>
+         </fieldset>
+       <fieldset>
+           <legend>Auth info</legend>
+        <label> Your email 
+            <input 
+             type="email"
+             placeholder="mail@mail.com" 
+            autofocus
+            autocomplete="email"/>
+         </label>
+         <label> Your password 
+             <input 
+             type="password" placeholder="Password"
+             autocomplete="new-password"/>
+         </label>
+       </fieldset>
+       
+        <label>Your phone
+            <input 
+            type="tel">
+        </label>
+        <fieldset>
+        <legend>Choose your gender</legend>
+        <label> Male 
+            <input 
+            type="radio"
+            name="gender" />
+        </label>
 
-    <div class="card-wrapper">
-        <div class="first-row"><p>Weekly Orders</p> <img src="./src/icons/bookmark-outline.svg" class="icon"/></div>
-        <p class="big-number">45,6334</p>
-        <p>Decreased by 10%</p>
-    </div>
+        <label> Female 
+            <input 
+            type="radio" 
+            name="gender"/>
+        </label>
+
+        <label> Non-binary 
+            <input 
+            type="radio"
+            name="gender" />
+        </label>
+    </fieldset>
+
+    <fieldset>
+        <legend>Other info</legend>
+        <label> Are you adult? 
+            <input 
+            type="checkbox"
+             />
+        </label>
+        <label> Birthday 
+            <input 
+            type="date"
+             />
+        </label>
+        <label> Avatar 
+            <input 
+            type="file"
+             />
+        </label>
+        <label> Foot size
+            <input 
+            type="range"
+             />
+        </label>
+    </fieldset>
+        <input type="reset" value="Click to reset">
+        <!-- <input type="submit" value="Click to submit"> -->
+     
+        <!-- 
+      
+        
+        <input type="file">
+        <input type="hidden">
+        <input type="image">
+        <input type="month">
+        <input type="number">
+    
+    
+    
+
+        <input type="search">
+      
+        <input type="tel">
+      
+        <input type="time">
+        <input type="url">
+        <input type="week">
+
+        <input type="color"> -->
+
+        <button 
+        type="submit" tabindex="1">Click me!</button>
+    </form>
 
 
-    <div class="card-wrapper">
-        <div class="first-row"><p>Weekly Orders</p> <img src="./src/icons/bookmark-outline.svg" class="icon"/></div>
-        <p class="big-number">45,6334</p>
-        <p>Decreased by 10%</p>
-    </div>
-
-
-    <div class="card-wrapper">
-        <div class="first-row"><p>Weekly Orders</p> <img src="./src/icons/bookmark-outline.svg" class="icon"/></div>
-        <p class="big-number">45,6334</p>
-        <p>Decreased by 10%</p>
-    </div>
-
-
-
-
-    <div class="card-wrapper">
-        <div class="first-row"><p>Weekly Orders</p> <img src="./src/icons/bookmark-outline.svg" class="icon"/></div>
-        <p class="big-number">45,6334</p>
-        <p>Decreased by 10%</p>
-    </div>
-
-
-
-    <div class="card-wrapper">
-        <div class="first-row"><p>Weekly Orders</p> <img src="./src/icons/bookmark-outline.svg" class="icon"/></div>
-        <p class="big-number">45,6334</p>
-        <p>Decreased by 10%</p>
-    </div>
-
-
-
-    <div class="card-wrapper">
-        <div class="first-row"><p>Weekly Orders</p> <img src="./src/icons/bookmark-outline.svg" class="icon"/></div>
-        <p class="big-number">45,6334</p>
-        <p>Decreased by 10%</p>
-    </div>
-
-</section>
 
 </body>
 </html>

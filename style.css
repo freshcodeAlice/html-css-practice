@@ -1,56 +1,29 @@
-.card-list {
-background-color: rgb(250, 250, 250);
-display: flex;
-flex-wrap: wrap;
-}
-
-.card-wrapper {
-width: 300px;
-background: rgb(138,196,242);
-background: linear-gradient(90deg, rgba(138,196,242,1) 0%, rgba(18,124,186,1) 100%);
-font-family: 'Ubuntu', sans-serif;;
-color: white;
-position: relative;
-padding: 25px;
-border-radius: 7px;
-margin: 10px;
-overflow: hidden;
-}
-
-.card-wrapper::before, .card-wrapper::after {
-width: 200px;
-height: 200px;
-background-color: white;
-border-radius: 50%;
-opacity: 0.25;
-content: ' ';
-position: absolute;
-
-}
-
-.card-wrapper::before {
-  top: -3em;
-  right: -4.5em;
-}
-
-.card-wrapper::after {
-  bottom: -5em;
-  right: -1em;
-}
-
-
-
-
-.first-row {
+form {
   display: flex;
+  flex-direction: column;
+  max-width: 300px;
 }
 
-.icon {
-  margin-left: auto;
+
+input:focus {
+  border: 2px solid red
+}
+label {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
 }
 
-.big-number {
-    font-weight: 700;
-    font-size: 1.8em;
-    margin: 5px 0 40px 0;
+input[type="email"] {
+color: red;
+}
+
+fieldset {
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: rgb(60, 150, 25);
+  border: 1px solid rgb(1, 54, 13);
+  outline: none;
 }
