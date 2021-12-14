@@ -4,7 +4,6 @@ form {
   max-width: 300px;
 }
 
-
 input:focus {
   border: 2px solid red
 }
@@ -14,9 +13,12 @@ label {
   margin-bottom: 10px;
 }
 
-input[type="email"] {
+input:invalid {
 color: red;
 }
+input:valid {
+  color: green;
+  }
 
 fieldset {
   margin-bottom: 10px;
@@ -26,4 +28,31 @@ button {
   background-color: rgb(60, 150, 25);
   border: 1px solid rgb(1, 54, 13);
   outline: none;
+}
+
+.required span::after {
+  color: red;
+  content: '*';
+}
+
+input:required{
+  border: 2px solid blue;
+}
+
+input:invalid{
+ 
+    border: 2px solid red;
+
+}
+
+textarea:disabled{
+  background-color: aquamarine;
+}
+
+input:checked {
+
+}
+
+input::placeholder{
+  color:violet
 }
