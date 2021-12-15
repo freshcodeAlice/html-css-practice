@@ -1,38 +1,17 @@
- @import url("./reset.css");
+@import url('./reset.css');
 
-@font-face {
-  font-family: "Corinthia";
-  src: url('./src/font/Corinthia/Corinthia-Regular.ttf');
-}
-
-@font-face {
-  font-family: "EnglishGothic";
-  src: url('./src/font/EnglishGothic.ttf');
+:root {
+  font-size: 16px;
 }
 
 
-
-body{
-  background-color: pink;
+ul {
+font-size: 0;
 }
 
-
-p {
-  font-family: "Corinthia";
-font-size: 2em;
+li {
+  display: inline-block;
+  font-size: 2rem;
 }
 
-p::first-letter {
-  font-family: "EnglishGothic";
-  font-size: 3em;
-  font-weight: medium;
-
-}
-
-.container {
-width: 300px;
-border: 1px solid black;
-margin: 0 auto;
-font-weight: medium;
-padding: 40px;
-}
+/* rem - root em */
