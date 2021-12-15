@@ -1,58 +1,96 @@
-form {
+body {
+  background-color: #282828;
+  color: white;
+}
+/* 
+font-family: 'Montserrat', sans-serif;
+font-family: 'Playfair Display', serif; */
+
+.form-wrapper {
+max-width: 66vw;
+font-size: 16px;
+padding: 6em 20em;
+padding-top: 0;
+
+border: 3px solid #C4C4C4;
+box-sizing: border-box;
+margin: 0 auto;
+margin-top: 5em;
+position: relative;
+text-align: center;
+}
+
+.form-wrapper::before, .form-wrapper::after {
+width: 160px;
+position: absolute;
+}
+
+
+.form-wrapper::before {
+  height: 160px;
+  content: url('./src/img/before.png');
+  top: -7.4em;
+  left: -7em;
+}
+
+.form-wrapper::after {
+  height: 100px;
+  content: url('./src/img/after.png');
+  top: -4.4em;
+    right: 1em;
+}
+
+
+.form-header {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.25em;
+   background-color: #282828;
+   /* position: absolute;
+   top: -1.5em;
+   left: 4em; */
+   padding: 0 2em;
+   margin-top: -1em;
+   margin-bottom: 3em;
+}
+
+.container {
+  max-width: 20vw;
   display: flex;
   flex-direction: column;
-  max-width: 300px;
+  margin: 0 auto;
 }
 
-input:focus {
-  border: 2px solid red
+
+.form-text {
+  font-family: 'Montserrat', sans-serif;
 }
-label {
+
+
+
+.contact-form {
   display: flex;
+  flex-direction: column;
+  /* max-width: 50%; */
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
   justify-content: space-between;
-  margin-bottom: 10px;
 }
 
-input:invalid {
-color: red;
-}
-input:valid {
-  color: green;
-  }
-
-fieldset {
-  margin-bottom: 10px;
+.contact-form input {
+  background-color: inherit;
+  border: none;
+  border-bottom: 1px solid #FFFFFF;
+  margin: 2em 0;
+  min-width: 0;
 }
 
-button {
-  background-color: rgb(60, 150, 25);
-  border: 1px solid rgb(1, 54, 13);
-  outline: none;
-}
-
-.required span::after {
-  color: red;
-  content: '*';
-}
-
-input:required{
-  border: 2px solid blue;
-}
-
-input:invalid{
- 
-    border: 2px solid red;
-
-}
-
-textarea:disabled{
-  background-color: aquamarine;
-}
-
-input:checked {
-
-}
-
-input::placeholder{
-  color:violet
+.contact-form button {
+  background-color: inherit;
+  cursor: pointer;
+  border: 1px solid #FFFFFF;
+  color: inherit;
+  padding: 5px;
 }
