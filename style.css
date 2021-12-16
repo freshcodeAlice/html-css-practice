@@ -1,8 +1,8 @@
-@import url('./reset.css');
+ @import url('./reset.css');
 
 .wrapper {
- width: 200px;
-  height: 300px;
+ width: 150px;
+  height: 200px;
 background-color: rgba(53, 62, 78, 0.596);
 margin: 0 auto;
 padding: 10px;
@@ -10,38 +10,38 @@ position: relative;
 
 }
 
-.card, .overlay{
+.card{
   width: 100%;
   height: 100%;
   background-color: cornflowerblue;
   overflow: hidden;
   backface-visibility: hidden;
   position: absolute;
-   transition: transform ease 1s; 
+   /* transition: transform ease 1s;  */
 }
 
 .card {
 display: flex;
 flex-direction: column;
 justify-content: space-between;
-min-height: 300px;
+min-height: 200px;
 align-items: center;
 position: relative;
-transform: perspective(600px) rotateY(0deg);
+/* transform: perspective(600px) rotateY(0deg); */
 }
 
 
 
 .card img {
-  width: 200px;
-  height: 200px;
+  width: 100px;
+  height: 100px;
   object-fit: cover;
   transform: none;
   border-radius: 50%;
 }
 
 
-
+/* 
 .overlay {
   background-color: cornflowerblue;
 width: 100%;
@@ -53,12 +53,83 @@ display: flex;
 justify-content: center;
 align-items: center;
 
-}
-
+} */
+/* 
 .wrapper:hover .card{
  transform: perspective(600px) rotateY(-180deg);
 } 
 
 .wrapper:hover .overlay {
   transform: perspective(600px) rotateY(0deg);
+} */
+
+.wrapper {
+  animation: anima 3s;
+}
+
+
+
+@keyframes anima {
+  0% {
+    transform: skew(0deg,0deg);
+  }
+  5% {
+    transform: skew(10deg,10deg);
+  }
+  10% {
+    transform: skew(20deg,20deg);
+  }
+  15% {
+    transform: skew(30deg,30deg);
+  }
+  20% {
+    transform: skew(40deg,40deg);
+  }
+  25% {
+    transform: skew(50deg,50deg);
+  }
+  30% {
+    transform: skew(60deg,60deg);
+  }
+  35% {
+    transform: skew(70deg,70deg);
+  }
+  40% {
+    transform: skew(80deg,80deg);
+  }
+  45% {
+    transform: skew(90deg,90deg);
+  }
+  50% {
+    transform: skew(100deg,100deg);
+  }
+  55% {
+    transform: skew(110deg,110deg);
+  }
+  60% {
+    transform: skew(120deg,120deg);
+  }
+  65% {
+    transform: skew(130deg,130deg);
+  }
+  70% {
+    transform: skew(140deg,140deg);
+  }
+  75% {
+    transform: skew(150deg,150deg);
+  }
+  80% {
+    transform: skew(160deg,160deg);
+  }
+  85% {
+    transform: skew(170deg,170deg);
+  }
+  90% {
+    transform: skew(180deg,180deg);
+  }
+
+  100% {
+    transform: skew(180deg,180deg);
+  }
+
 }
