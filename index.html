@@ -5,18 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-       
+    <link rel="stylesheet" href="./reset.css">
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
 
-<section class="container">
-    <article>
-        <h2>Heading of article</h2>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo nostrum ad, delectus perferendis sed rerum dolore praesentium ipsa totam mollitia.</p>
-    </article>
-</section>
-
+<picture>
+  <source srcset="./src/img/deer.webp" media="(min-width:800px)" type="image/webp"/>
+  <source srcset="./src/img/deer-450.jpg" media="(max-width:800px)"/>
+  <source srcset="./src/img/deer.jpg" media="(min-width: 801px),(min-resolution: 150dpi)"/>
+  <img src="./src/img/deer.jpg" class="img" alt="fallback"/>
+</picture>
 
 </body>
 </html>
