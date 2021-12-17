@@ -1,6 +1,37 @@
+body {
+  margin:0;
+  padding: 0;
+  border: 0;
+}
+
+
 .img {
   width: 100%;
-  height: 400px;
+  height: 100%;
   object-fit: cover;
   object-position: bottom;
+  border: 2px solid red;
+  position: absolute;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+/* ответственен за ширину*/
+
+:root {
+  --aspect-ratio: calc(9/16);
+}
+
+.wrapper {
+  width: 80%;
+  border: 2px solid green;
+}
+
+/* ответственен за высоту */
+
+.hack {
+  padding-top: calc(var(--aspect-ratio)*100%);
+  position: relative;
 }
