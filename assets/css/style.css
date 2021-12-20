@@ -1,0 +1,18 @@
+/* @import url('./bootstrap-grid.css'); */
+@import url('./custom-grid.css');
+
+
+h1 {
+    text-align: center;
+}
+
+article {
+    padding-left: 0.8em;
+    padding-right: 0.8em;
+
+}
+
+.container {
+    font-size: 1.2em;
+    background-color: lightblue;
+}
