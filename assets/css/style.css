@@ -7,15 +7,38 @@
 .container {
     display: grid;
     background-color: lightpink;
-    grid-template-columns: [main-content] 1fr;
-    grid-auto-rows: 300px;
+    grid-template-columns: 20% 1fr 270px;
+    grid-column-gap: 20px;
+    grid-row-gap: 10px;
+    grid-template-areas: 
+            "header header header"
+            "nav main aside"
+            "footer footer footer"
   }
 
 
-  .card:nth-child(n) {
+  /* .card:nth-child(n) {
     grid-column: main-content;
+} */
+
+
+.card:nth-child(1) {
+grid-area: header;
 }
 
+.card:nth-child(2) {
+    grid-area: nav;
+}
+
+.card:nth-child(3) {
+    grid-area: main;
+}
+.card:nth-child(4) {
+    grid-area: aside;
+}
+.card:nth-child(5) {
+    grid-area: footer;
+}
 
 
 .card {
@@ -51,7 +74,7 @@
     object-fit: cover;
 }
 
-
+/* 
 
 @media screen and (min-width: 576px) {
 
@@ -59,7 +82,7 @@
 
 .container {
     background-color: lightblue;
-    /* display: grid; */
+
 
     grid-template-columns: [main-start] 20% [main-content] 2fr [main-end] 1fr [aside] 200px [the-end];
     grid-template-rows: 200px 1fr 200px;
@@ -69,7 +92,7 @@
   /* 20% 2fr 1fr 200px: из 100% отнимаются 20% и 200px, оставшееся место делится на (2+1) части. Колонка №2 получает 2/3 от этого места, колонка №3 - 1/3*/
 
   /* repeat(4, 1fr) - то же самое, что 1fr 1fr 1fr 1fr */
-
+/*
 .card:nth-child(1) {
     grid-column-start: main-start;
     grid-column-end: the-end;
@@ -107,4 +130,4 @@
 
 
    
-}
+} */
